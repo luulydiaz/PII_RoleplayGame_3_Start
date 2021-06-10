@@ -19,15 +19,15 @@
 //         {
 //             this.gandalf = new Wizard("Gandalf");
 //             this.staff = new Staff();
-//             this.spellsBook= new SpellsBook();
-//             spellsBook.Spells = new Spell[] { new Spell() };
+//             this.spellsBook = new SpellsBook();
+//             spellsBook.AddSpell(new SpellOne());
 //             gandalf.AddItem(staff);
 //             gandalf.AddItem(spellsBook);
 
 //             this.saruman = new Wizard("Saruman");
 //             this.sarumanStaff = new Staff();
-//             this.sarumanSpellsBook= new SpellsBook();
-//             sarumanSpellsBook.Spells = new Spell[] { new Spell() };
+//             this.sarumanSpellsBook = new SpellsBook();
+//             sarumanSpellsBook.AddSpell(new SpellOne());
             
 
 //         }
@@ -39,7 +39,7 @@
 //             saruman.AddItem(sarumanStaff);
 //             saruman.AddItem(sarumanStaff);
 //             int initialLife = gandalf.Health;
-//             gandalf.ReceiveAttack(saruman);
+//             gandalf.ReceiveAttack(saruman.AttackValue);
 
 //             Assert.AreNotEqual(initialLife, gandalf.Health);
 //         }
@@ -51,7 +51,7 @@
 //             saruman.AddItem(sarumanStaff);
 //             saruman.AddItem(sarumanStaff);
 //             saruman.AddItem(sarumanStaff);
-//             gandalf.ReceiveAttack(saruman);
+//             gandalf.ReceiveAttack(saruman.AttackValue);
 
 //             Assert.AreEqual(gandalf.Health, 0);
 //         }
@@ -61,7 +61,7 @@
 //         {
 //             saruman.AddItem(sarumanSpellsBook);
 //             int initialLife = gandalf.Health;
-//             gandalf.ReceiveAttack(saruman);
+//             gandalf.ReceiveAttack(saruman.AttackValue);
 
 //             Assert.AreEqual(initialLife, gandalf.Health);
 //         }
@@ -72,7 +72,7 @@
 //             saruman.AddItem(sarumanSpellsBook);
 //             saruman.AddItem(sarumanStaff);
 //             saruman.AddItem(sarumanSpellsBook);
-//             gandalf.ReceiveAttack(saruman);
+//             gandalf.ReceiveAttack(saruman.AttackValue);
 //             int actualLife = gandalf.Health;
 //             gandalf.Cure();
 
@@ -86,7 +86,7 @@
 //             saruman.AddItem(sarumanStaff);
 //             saruman.AddItem(sarumanStaff);
 //             saruman.AddItem(sarumanStaff);
-//             gandalf.ReceiveAttack(saruman);
+//             gandalf.ReceiveAttack(saruman.AttackValue);
 //             int actualHealt = gandalf.Health;
 //             gandalf.Cure();
 

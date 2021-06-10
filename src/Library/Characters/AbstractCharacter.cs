@@ -1,11 +1,12 @@
 using System.Collections.Generic;
+
 namespace RoleplayGame
 {
     public abstract class AbstractCharacter
     {
         private int health;
 
-        private List<IItem> items;
+        protected List<IItem> items;
 
         public AbstractCharacter(string name)
         {
@@ -16,7 +17,7 @@ namespace RoleplayGame
 
         protected string Name { get; set; }
         
-        protected int AttackValue
+        public virtual int AttackValue
         {
             get
             {
@@ -32,7 +33,7 @@ namespace RoleplayGame
             }
         }
 
-        protected int DefenseValue
+        public virtual int DefenseValue
         {
             get
             {
