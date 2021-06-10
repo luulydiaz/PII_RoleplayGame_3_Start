@@ -16,7 +16,7 @@ namespace RoleplayGame
         }
 
         protected string Name { get; set; }
-        
+
         public virtual int AttackValue
         {
             get
@@ -58,6 +58,14 @@ namespace RoleplayGame
             private set
             {
                 this.health = value < 0 ? 0 : value;
+            }
+        }
+
+        public bool IsAlive
+        {
+            get
+            {
+                return this.Health > 0;
             }
         }
 
