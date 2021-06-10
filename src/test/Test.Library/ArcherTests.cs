@@ -36,7 +36,7 @@
 //         public void Health_Is_Modified_By_Attack()      //Prueba que el metodo ReceiveAttack modifica la vida
 //         {
 //             int initialLife = legolas.Health;
-//             legolas.ReceiveAttack(nurgargan);
+//             legolas.ReceiveAttack(nurgargan.AttackValue);
 
 //             Assert.AreNotEqual(initialLife, legolas.Health);
 //         }
