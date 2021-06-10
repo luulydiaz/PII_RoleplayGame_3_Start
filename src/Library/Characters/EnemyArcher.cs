@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace RoleplayGame
 {
-    public class EnemyWizard : AbstractMagicEnemy
+    public class EnemyArcher : AbstractEnemy
     {
-        public EnemyWizard(string name) : base(name)
+        public EnemyArcher (string name) : base(name)
         {
         }
 
@@ -12,7 +12,7 @@ namespace RoleplayGame
         {
             get
             {
-                return 8;
+                return 5;
             }
         }
     }
